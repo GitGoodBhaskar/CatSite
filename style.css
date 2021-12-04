@@ -6,16 +6,29 @@ img:hover {
 transform: scale(1.3);
 }
 
-ul {
-    font-size: 1vw;
-    line-height:150%;
-    list-style-type:square;
+blockquote {
+    border: 5px;
+    width: fit-content;
+    background-color: pink;
+    font-size:1vw;
+    border-radius: 3px;
 }
 
 ol {
+    color:crimson;
     font-size: 1vw;
-    line-height:150%;
-    list-style-type:disc;
+    line-height: 150%;
+    list-style-type: disc;
+}
+
+ul {
+    color:crimson;
+    background:url(Stare.jpg) no-repeat;
+    background-attachment: fixed;
+    font-size: 1vw;
+    line-height: 150%;
+    list-style-type: square;
+
 }
 
 html {
@@ -24,4 +37,12 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+pre#poem{
+    color:darkgreen;
+    font-size:1vw; 
+    background-color:pink; 
+    width:max-content;
+    border-radius: 10px;
 }
