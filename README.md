@@ -1,4 +1,4 @@
-Life is too serious nowadays.
+Life is too serious.
 Read a few interesting and cool facts about cats.
 
 Live version: https://bhaskarsarmah.w3spaces.com/
