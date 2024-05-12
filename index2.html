@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #00FF00; /* Green text */
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 20px; /* Curved box edges */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      position: relative; /* Position relative for absolute positioning of the gradients */
+      overflow: hidden; /* Hide overflow to prevent clipping of the gradients */
+    }
+
+    .container::before,
+    .container::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      border-radius: 30px; /* Increase border radius for outside gradient */
+      border: 5px solid transparent;
+      z-index: -1; /* Push behind the container */
+    }
+
+    .container::before {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)); /* Slight gradient for the border */
+      transition: background 0.3s ease; /* Transition the background */
+    }
+
+    .container:hover::before {
+      background: linear-gradient(to right, rgba(173, 50, 50, 0.7), rgba(255, 255, 255, 0)); /* Adjusted gradient for the border on hover */
+    }
+
+    .intro {
+      font-size: 18px;
+      color: #00FF00; /* Green text */
+      z-index: 2; /* Ensure the content is above the gradients */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <p class="intro">Hello there!</p>
+    <p class="intro">I'm Bhaskar, an IT professional currently working as a Cloud Security Engineer in the IT sector.</p>
+    <p class="intro">I thrive on innovation and continuous improvement, constantly seeking new challenges to overcome. Fueled by curiosity, I enjoy venturing into unexplored territories, driving positive change through my work.</p>
+    <p class="intro">My dedication to excellence and pushing boundaries ensures that I consistently deliver results and exceed expectations.</p>
+  </div>
+
+  <center>
+    <p style="color: #FFFFFF;">Check out my website below:</p>
+    <button style="padding: 10px 20px; background-color: #333; color: #fff; border: none; border-radius: 4px; font-weight: bold;">
+      <a href="index2.html" style="text-decoration: none; color: #fff;" target="_blank">Click on me!</a>
+    </button>
+  </center>
+</body>
+
+</html>
